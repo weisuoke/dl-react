@@ -1,0 +1,598 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "tpl-react18-w5-swc",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "start": "NODE_ENV=development webpack serve",
+        "build": "NODE_ENV=production webpack",
+        "lint:lint-staged": "lint-staged"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/weisuoke/tpl-react18-w5-swc.git"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "bugs": {
+        "url": "https://github.com/weisuoke/tpl-react18-w5-swc/issues"
+      },
+      "homepage": "https://github.com/weisuoke/tpl-react18-w5-swc#readme",
+      "devDependencies": {
+        "@commitlint/cli": "^16.2.4",
+        "@commitlint/config-conventional": "^16.2.4",
+        "@swc/core": "^1.2.177",
+        "@types/react": "^18.0.9",
+        "@types/react-dom": "^18.0.3",
+        "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "@typescript-eslint/parser": "^5.22.0",
+        "dotenv": "^16.0.0",
+        "dotenv-expand": "^8.0.3",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.29.4",
+        "eslint-plugin-react-hooks": "^4.5.0",
+        "html-webpack-plugin": "^5.5.0",
+        "husky": "^7.0.4",
+        "prettier": "^2.6.2",
+        "react-dev-utils": "^12.0.1",
+        "swc-loader": "^0.2.0",
+        "typescript": "^4.6.4",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.9.0",
+        "webpack-merge": "^5.8.0"
+      },
+      "dependencies": {
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+      },
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged",
+          "pre-push": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "src/**/*.{jsx,tsx,ts,js,json}": [
+          "prettier --write",
+          "eslint --fix"
+        ],
+        "src/**/*.{md,css}": [
+          "prettier --write"
+        ]
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      }
+    },
+    "prefix": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/Users/wuxiao/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@commitlint/cli/16.2.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@commitlint/cli",
+      "rawSpec": "^16.2.4"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@commitlint/config-conventional/16.2.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@commitlint/config-conventional",
+      "rawSpec": "^16.2.4"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@swc/core/1.2.177",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@swc/core",
+      "rawSpec": "^1.2.177"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/react/18.0.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/react",
+      "rawSpec": "^18.0.9"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/react-dom/18.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/react-dom",
+      "rawSpec": "^18.0.3"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.22.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@typescript-eslint/eslint-plugin",
+      "rawSpec": "^5.22.0"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@typescript-eslint/parser/5.22.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@typescript-eslint/parser",
+      "rawSpec": "^5.22.0"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/dotenv/16.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "dotenv",
+      "rawSpec": "^16.0.0"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/dotenv-expand/8.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "dotenv-expand",
+      "rawSpec": "^8.0.3"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint/8.15.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^8.15.0"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint-config-prettier/8.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "^8.5.0"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint-plugin-import/2.26.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-import",
+      "rawSpec": "^2.26.0"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint-plugin-prettier/4.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint-plugin-react/7.29.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-react",
+      "rawSpec": "^7.29.4"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/eslint-plugin-react-hooks/4.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-react-hooks",
+      "rawSpec": "^4.5.0"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/html-webpack-plugin/5.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "html-webpack-plugin",
+      "rawSpec": "^5.5.0"
+    }
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/husky/7.0.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "^7.0.4"
+    }
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/prettier/2.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "^2.6.2"
+    }
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/react-dev-utils/12.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dev-utils",
+      "rawSpec": "^12.0.1"
+    }
+  },
+  "23 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/swc-loader/0.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "swc-loader",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/typescript/4.6.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "^4.6.4"
+    }
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/webpack/5.72.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "webpack",
+      "rawSpec": "^5.72.0"
+    }
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/webpack-cli/4.9.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "webpack-cli",
+      "rawSpec": "^4.9.2"
+    }
+  },
+  "27 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/webpack-dev-server/4.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "webpack-dev-server",
+      "rawSpec": "^4.9.0"
+    }
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/webpack-merge/5.8.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "webpack-merge",
+      "rawSpec": "^5.8.0"
+    }
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/react-dom/18.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "^18.1.0"
+    }
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/react/18.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "^18.1.0"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@swc/core/1.2.177",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@swc/core/1.2.177",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@commitlint/cli/16.2.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@commitlint/cli/16.2.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/react-dom/18.0.3",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/react-dom/18.0.3",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@commitlint/config-conventional/16.2.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@commitlint/config-conventional/16.2.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@typescript-eslint/parser/5.22.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@typescript-eslint/parser/5.22.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/dotenv/16.0.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/dotenv/16.0.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/react/18.0.9",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/react/18.0.9",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/dotenv-expand/8.0.3",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/dotenv-expand/8.0.3",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.22.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.22.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint/8.15.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint/8.15.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-config-prettier/8.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-config-prettier/8.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-prettier/4.0.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-prettier/4.0.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-import/2.26.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-import/2.26.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/husky/7.0.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/husky/7.0.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-react-hooks/4.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-react-hooks/4.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-react/7.29.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/eslint-plugin-react/7.29.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react-dev-utils/12.0.1",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react-dev-utils/12.0.1",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/html-webpack-plugin/5.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/html-webpack-plugin/5.5.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/prettier/2.6.2",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/prettier/2.6.2",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/swc-loader/0.2.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/swc-loader/0.2.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-cli/4.9.2",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-cli/4.9.2",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-dev-server/4.9.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-dev-server/4.9.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/typescript/4.6.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/typescript/4.6.4",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-merge/5.8.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack-merge/5.8.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react-dom/18.1.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react-dom/18.1.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react/18.1.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/react/18.1.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack/5.72.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "found_in_store"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/webpack/5.72.0",
+    "requester": "/Users/wuxiao/Documents/wuxiao.io/personal/tpl/tpl-react18-w5-swc",
+    "status": "resolved"
+  },
+  "85 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "lint-stage is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npm.taobao.org/lint-stage"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "lint-stage",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "lint-stage",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npm.taobao.org/lint-stage: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npm.taobao.org/lint-stage: Not Found - 404\n    at RetryOperation._fn (/Users/wuxiao/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:84259:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "dl-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack serve",
+    "build": "NODE_ENV=production webpack",
+    "test": "jest",
+    "lint:lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisuoke/tpl-react17-w5-swc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weisuoke/tpl-react17-w5-swc/issues"
+  },
+  "homepage": "https://github.com/weisuoke/tpl-react17-w5-swc#readme",
+  "devDependencies": {
+    "@babel/traverse": "7.17.10",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@swc/core": "^1.2.177",
+    "@swc/helpers": "^0.3.13",
+    "@swc/jest": "^0.2.20",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.0",
+    "dotenv-expand": "^8.0.3",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "lint-staged": "^12.4.1",
+    "postcss": "^8.4.13",
+    "postcss-import": "^14.1.0",
+    "postcss-loader": "^6.2.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.5.0",
+    "prettier": "^2.6.2",
+    "react-dev-utils": "^12.0.1",
+    "style-loader": "^3.3.1",
+    "swc-loader": "^0.2.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{jsx,tsx,ts,js,json}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.{md,css}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
