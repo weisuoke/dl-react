@@ -1,0 +1,1 @@
+https://medium.com/better-programming/decoupling-your-concerns-with-dependency-injection-the-repository-pattern-react-and-typescript-6b455788a374

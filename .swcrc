@@ -12,6 +12,9 @@
     "parser": {
       "syntax": "typescript",
       "tsx": true,
+      "legacyDecorator": true,
+      "decorators": true,
+      "decoratorMetadata": true,
       "dynamicImport": true
     }
   }
